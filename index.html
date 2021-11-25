@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Особенности-->
@@ -101,9 +101,18 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 
                 <ul class="activity-list">
-                    <li class="activity-item"><img src="./images/box1.jpg" alt="Реализация проекта по алгоритму" width="370"></li>
-                    <li class="activity-item"><img src="./images/box2.jpg" alt="Оптимизация макета под смартфон" width="370"></li>
-                    <li class="activity-item"><img src="./images/box3.jpg" alt="Выбор из палитры цветов" width="370"></li>
+                    <li class="activity-item">
+                        <img src="./images/box1.jpg" alt="Реализация проекта по алгоритму" width="370">
+                        <p class="activity-subtitle">Десктопные приложения</p>
+                    </li>
+                    <li class="activity-item">
+                        <img src="./images/box2.jpg" alt="Оптимизация макета под смартфон" width="370">
+                        <p class="activity-subtitle">Мобильные приложения</p>
+                    </li>
+                    <li class="activity-item">
+                        <img src="./images/box3.jpg" alt="Выбор из палитры цветов" width="370">
+                        <p class="activity-subtitle">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -256,5 +265,13 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-modal" data-modal-close><svg class="modal-icon">
+                <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg></button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
